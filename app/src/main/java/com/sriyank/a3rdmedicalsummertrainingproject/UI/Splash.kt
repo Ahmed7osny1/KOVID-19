@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.sriyank.a3rdmedicalsummertrainingproject.R
 import com.sriyank.a3rdmedicalsummertrainingproject.databinding.FragmentLoginBinding
 
-class LoginFragment : Fragment() {
+class Splash : Fragment() {
 
 
     override fun onCreateView(
@@ -16,10 +16,10 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+        //return inflater.inflate(R.layout.fragment_splash, container, false)
         val binding = FragmentLoginBinding.inflate(inflater,container,false)
 
 
         return binding.root
     }
-
 }

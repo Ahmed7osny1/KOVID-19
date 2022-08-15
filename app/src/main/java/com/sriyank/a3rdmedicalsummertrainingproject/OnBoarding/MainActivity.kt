@@ -1,12 +1,17 @@
-package com.sriyank.a3rdmedicalsummertrainingproject.UI
+package com.sriyank.kovid19.OnBoarding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.sriyank.a3rdmedicalsummertrainingproject.R
+import android.widget.Toast
+import com.sriyank.kovid19.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        supportActionBar?.hide()
+
+
     }
 }

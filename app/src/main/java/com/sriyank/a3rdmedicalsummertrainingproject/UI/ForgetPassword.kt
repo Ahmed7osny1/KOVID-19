@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.sriyank.a3rdmedicalsummertrainingproject.R
-import com.sriyank.a3rdmedicalsummertrainingproject.databinding.FragmentLoginBinding
 
-class LoginFragment : Fragment() {
+
+class ForgetPassword : Fragment() {
 
 
     override fun onCreateView(
@@ -16,10 +16,7 @@ class LoginFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val binding = FragmentLoginBinding.inflate(inflater,container,false)
-
-
-        return binding.root
+        return inflater.inflate(R.layout.fragment_forget_password, container, false)
     }
 
 }
