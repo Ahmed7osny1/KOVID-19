@@ -1,10 +1,10 @@
 package com.sriyank.a3rdmedicalsummertrainingproject
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_home.*
 
@@ -23,6 +23,8 @@ class HomeActivity : AppCompatActivity() {
 
     private fun navViewer(){
 
+        nav_view.bringToFront()
+
         nav_view.setNavigationItemSelectedListener {
 
             when(it.itemId){
@@ -33,7 +35,7 @@ class HomeActivity : AppCompatActivity() {
                     // btnLogoutClicked()
                     Toast.makeText(this,"You Logged Out",Toast.LENGTH_LONG).show()
                 }
-                R.id.profile -> startActivity(Intent(this,ProfileFragment::class.java))
+                R.id.profile -> startActivity(Intent(this,ProfileActivity::class.java))
             }
             false
         }
