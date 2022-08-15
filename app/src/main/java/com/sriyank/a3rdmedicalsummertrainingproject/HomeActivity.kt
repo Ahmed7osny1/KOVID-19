@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.advice_items.view.*
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,9 +17,9 @@ class HomeActivity : AppCompatActivity() {
         // Navigation Drawer
         navViewer()
 
-
-
     }
+
+
 
 
     private fun navViewer(){
@@ -29,7 +30,7 @@ class HomeActivity : AppCompatActivity() {
 
             when(it.itemId){
                 R.id.home -> drawable_layout.closeDrawer(GravityCompat.START)
-                R.id.settings -> Toast.makeText(this,"settings",Toast.LENGTH_LONG).show()
+                R.id.About -> Toast.makeText(this,"About",Toast.LENGTH_LONG).show()
                 R.id.logout -> {
                     // API
                     // btnLogoutClicked()

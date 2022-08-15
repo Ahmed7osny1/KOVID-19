@@ -99,11 +99,7 @@
                         android:textSize="@dimen/_18ssp"
                         android:textStyle="bold|italic" />
 
-                    <ListView
-                        android:id="@+id/rec_services"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp" />
+
 
                 </LinearLayout>
 
@@ -111,66 +107,20 @@
                     android:id="@+id/line_ADVICE"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="@dimen/_8sdp">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/prevention_and_advice"
                         android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_8sdp"
                         android:textSize="@dimen/_18ssp"
                         android:textStyle="bold|italic" />
 
-                    <androidx.cardview.widget.CardView
-                        android:layout_width="340dp"
-                        android:layout_height="250dp"
-                        android:layout_margin="10dp">
-
-
-                        <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent">
-
-                            <de.hdodenhof.circleimageview.CircleImageView
-                                android:id="@+id/advice_img"
-                                android:layout_width="@dimen/_110sdp"
-                                android:layout_height="@dimen/_90sdp"
-                                android:src="@drawable/advicea"
-                                android:layout_marginTop="@dimen/_12sdp"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toEndOf="@+id/txt_title"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/txt_title"
-                                android:layout_width="@dimen/_125sdp"
-                                android:layout_height="wrap_content"
-                                android:text="@string/wash_your_hands_frequently"
-                                android:textSize="@dimen/_16ssp"
-                                android:textColor="@color/ColorApp"
-                                android:textStyle="bold|italic"
-                                android:layout_marginStart="@dimen/_12sdp"
-                                android:layout_marginTop="@dimen/_35sdp"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toTopOf="parent" />
-
-                            <TextView
-                                android:id="@+id/txt_description"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:gravity="center"
-                                android:text="@string/regularly_and_thoroughly_clean_your_hands_with_an_alcohol_based_hand_rub_or_wash_them_with_soap_and_water_for_at_least_20_seconds"
-                                android:textSize="@dimen/_14ssp"
-                                app:layout_constraintBottom_toBottomOf="parent"
-                                app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                                app:layout_constraintTop_toBottomOf="@+id/advice_img" />
-
-
-                        </androidx.constraintlayout.widget.ConstraintLayout>
-
-                    </androidx.cardview.widget.CardView>
+                    <include
+                        layout="@layout/advice_items"
+                        />
 
                 </LinearLayout>
 
@@ -178,22 +128,20 @@
                     android:id="@+id/line_wash"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="@dimen/_8sdp">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/follow_steps_to_wash_hands"
                         android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_8sdp"
                         android:textSize="@dimen/_18ssp"
                         android:textStyle="bold|italic" />
 
-                    <ListView
-                        android:id="@+id/rec_wash"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp" />
+                    <include
+                        layout="@layout/wash_items"
+                        />
 
                 </LinearLayout>
 
@@ -202,7 +150,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="@dimen/_8sdp">
+                    >
 
                     <TextView
                         android:layout_width="match_parent"
@@ -210,13 +158,12 @@
                         android:text="@string/transmission_of_covid_19"
                         android:textColor="@color/black"
                         android:textSize="@dimen/_18ssp"
+                        android:layout_marginStart="@dimen/_8sdp"
                         android:textStyle="bold|italic" />
 
-                    <ListView
-                        android:id="@+id/rec_TRANSMISSION"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp" />
+                    <include
+                        layout="@layout/transmission_items"
+                        />
 
                 </LinearLayout>
 
@@ -225,21 +172,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:padding="@dimen/_8sdp">
+                    >
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/symptoms_of_coronavirus"
                         android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/_8sdp"
                         android:textSize="@dimen/_18ssp"
                         android:textStyle="bold|italic" />
 
-                    <ListView
-                        android:id="@+id/rec_SYMPTOMS"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_8sdp" />
+                    <include
+                        layout="@layout/symptoms_items"
+                        />
 
                 </LinearLayout>
 

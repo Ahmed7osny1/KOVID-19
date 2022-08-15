@@ -16,7 +16,7 @@
         >
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/_260sdp"
-            android:layout_height="@dimen/_165sdp"
+            android:layout_height="@dimen/_175sdp"
             android:layout_margin="@dimen/_5sdp"
             >
 
@@ -29,7 +29,7 @@
                     android:id="@+id/advice_img"
                     android:layout_width="@dimen/_100sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:src="@drawable/advicea"
+                    android:src="@drawable/symptoma"
                     android:layout_marginTop="@dimen/_5sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/txt_title"
@@ -39,7 +39,7 @@
                     android:id="@+id/txt_title"
                     android:layout_width="@dimen/_125sdp"
                     android:layout_height="wrap_content"
-                    android:text="@string/wash_your_hands_frequently"
+                    android:text="@string/fever"
                     android:textSize="@dimen/_16ssp"
                     android:textColor="@color/ColorApp"
                     android:textStyle="bold|italic"
@@ -53,7 +53,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/Advice1"
+                    android:text="@string/symptoms1"
                     android:textSize="@dimen/_13ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -67,7 +67,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/_260sdp"
-            android:layout_height="@dimen/_165sdp"
+            android:layout_height="@dimen/_175sdp"
             android:layout_margin="@dimen/_5sdp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -79,7 +79,7 @@
                     android:id="@+id/advice_img2"
                     android:layout_width="@dimen/_100sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:src="@drawable/adviceb"
+                    android:src="@drawable/symptomb"
                     android:layout_marginTop="@dimen/_5sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/txt_title2"
@@ -87,9 +87,9 @@
 
                 <TextView
                     android:id="@+id/txt_title2"
-                    android:layout_width="@dimen/_125sdp"
+                    android:layout_width="@dimen/_135sdp"
                     android:layout_height="wrap_content"
-                    android:text="@string/maintain_social_distancing"
+                    android:text="@string/continuous_cough"
                     android:textSize="@dimen/_16ssp"
                     android:textColor="@color/ColorApp"
                     android:textStyle="bold|italic"
@@ -104,7 +104,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:gravity="center"
-                    android:text="@string/Advice2"
+                    android:text="@string/symptoms2"
                     android:textSize="@dimen/_13ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -118,7 +118,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/_260sdp"
-            android:layout_height="@dimen/_165sdp"
+            android:layout_height="@dimen/_175sdp"
             android:layout_margin="@dimen/_5sdp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -130,7 +130,7 @@
                     android:id="@+id/advice_img3"
                     android:layout_width="@dimen/_100sdp"
                     android:layout_height="@dimen/_80sdp"
-                    android:src="@drawable/advicec"
+                    android:src="@drawable/symptomc"
                     android:layout_marginTop="@dimen/_5sdp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/txt_title3"
@@ -138,9 +138,9 @@
 
                 <TextView
                     android:id="@+id/txt_title3"
-                    android:layout_width="@dimen/_125sdp"
+                    android:layout_width="@dimen/_135sdp"
                     android:layout_height="wrap_content"
-                    android:text="@string/avoid_touching_face"
+                    android:text="@string/difficulty_breathing"
                     android:textSize="@dimen/_16ssp"
                     android:textColor="@color/ColorApp"
                     android:textStyle="bold|italic"
@@ -154,58 +154,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center"
-                    android:text="@string/Advice3"
-                    android:textSize="@dimen/_13ssp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="@dimen/_260sdp"
-            android:layout_height="@dimen/_165sdp"
-            android:layout_margin="@dimen/_5sdp"
-            >
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="@dimen/_8sdp">
-
-                <de.hdodenhof.circleimageview.CircleImageView
-                    android:id="@+id/advice_img4"
-                    android:layout_width="@dimen/_100sdp"
-                    android:layout_height="@dimen/_80sdp"
-                    android:src="@drawable/adviced"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/txt_title4"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/txt_title4"
-                    android:layout_width="@dimen/_140sdp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_2sdp"
-                    android:layout_marginTop="44dp"
-                    android:text="@string/practice_respiratory_hygiene"
-                    android:textColor="@color/ColorApp"
-                    android:textSize="@dimen/_16ssp"
-                    android:textStyle="bold|italic"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/txt_description4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:layout_marginBottom="@dimen/_10sdp"
-                    android:text="@string/Advice4"
+                    android:text="@string/symptoms3"
                     android:textSize="@dimen/_13ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
