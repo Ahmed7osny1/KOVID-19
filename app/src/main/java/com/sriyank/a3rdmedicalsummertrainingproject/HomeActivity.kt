@@ -1,10 +1,10 @@
 package com.sriyank.a3rdmedicalsummertrainingproject
 
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import com.sriyank.a3rdmedicalsummertrainingproject.service.VaccineReservationActivity
 import kotlinx.android.synthetic.main.activity_home.*
@@ -17,34 +17,30 @@ class HomeActivity : AppCompatActivity() {
 
         // Navigation Drawer
         navViewer()
-
         serviceSelect.VaccineReservation.setOnClickListener {
-            startActivity(Intent(this, VaccineReservationActivity::class.java)) }
+            startActivity(Intent(this, VaccineReservationActivity::class.java))
+        }
 
     }
 
-
-
-
-    private fun navViewer(){
+    private fun navViewer() {
 
         nav_view.bringToFront()
 
         nav_view.setNavigationItemSelectedListener {
 
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.home -> drawable_layout.closeDrawer(GravityCompat.START)
-                R.id.About -> Toast.makeText(this,"About",Toast.LENGTH_LONG).show()
+                R.id.About -> Toast.makeText(this, "About", Toast.LENGTH_LONG).show()
                 R.id.logout -> {
                     // API
                     // btnLogoutClicked()
-                    Toast.makeText(this,"You Logged Out",Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "You Logged Out", Toast.LENGTH_LONG).show()
                 }
-                R.id.profile -> startActivity(Intent(this,ProfileActivity::class.java))
+                R.id.profile -> startActivity(Intent(this, ProfileActivity::class.java))
             }
             false
         }
-
     }
 
     /*

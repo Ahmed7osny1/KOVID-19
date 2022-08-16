@@ -1,9 +1,8 @@
-package com.sriyank.kovid19.OnBoarding
+package com.sriyank.a3rdmedicalsummertrainingproject.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import com.sriyank.kovid19.R
+import com.sriyank.a3rdmedicalsummertrainingproject.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
