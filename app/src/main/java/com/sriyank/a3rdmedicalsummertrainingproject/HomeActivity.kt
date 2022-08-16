@@ -6,8 +6,9 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import com.sriyank.a3rdmedicalsummertrainingproject.service.VaccineReservationActivity
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.advice_items.view.*
+import kotlinx.android.synthetic.main.service_items.view.*
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -16,6 +17,9 @@ class HomeActivity : AppCompatActivity() {
 
         // Navigation Drawer
         navViewer()
+
+        serviceSelect.VaccineReservation.setOnClickListener {
+            startActivity(Intent(this, VaccineReservationActivity::class.java)) }
 
     }
 
