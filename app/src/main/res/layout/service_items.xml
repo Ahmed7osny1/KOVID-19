@@ -29,10 +29,9 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/advice_img"
-                    android:layout_width="@dimen/_100sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:src="@drawable/vaccine"
+                    android:src="@drawable/vaccinereserve"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -41,8 +40,8 @@
                     android:id="@+id/txt_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vaccine Reservation"
-                    android:textColor="@color/ColorApp"
+                    android:text="@string/vaccine_reservation"
+                    android:textColor="#1E5891"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold|italic"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -68,10 +67,9 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/advice_img2"
-                    android:layout_width="@dimen/_100sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:src="@drawable/test"
+                    android:src="@drawable/pcranalysis"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -81,7 +79,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/reserve_pcr_analysis"
-                    android:textColor="@color/ColorApp"
+                    android:textColor="#1E5891"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold|italic"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -95,6 +93,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/chattingDoctor"
             android:layout_width="@dimen/_160sdp"
             android:layout_height="@dimen/_125sdp"
             android:layout_margin="@dimen/_5sdp">
@@ -106,10 +105,9 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/advice_img3"
-                    android:layout_width="@dimen/_100sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:src="@drawable/dose"
+                    android:src="@drawable/chatingdoctor"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -119,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/contact_with_doctor"
-                    android:textColor="@color/ColorApp"
+                    android:textColor="#1E5891"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold|italic"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -133,6 +131,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/Radiology"
             android:layout_width="@dimen/_140sdp"
             android:layout_height="@dimen/_125sdp"
             android:layout_margin="@dimen/_5sdp"
@@ -145,10 +144,9 @@
 
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/advice_img4"
-                    android:layout_width="@dimen/_100sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_80sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:src="@drawable/adviced"
+                    android:src="@drawable/radiolgy"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -158,13 +156,52 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/chest_x_ray"
-                    android:textColor="@color/ColorApp"
+                    android:textColor="#1E5891"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold|italic"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/advice_img4" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/VideoCall"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_margin="@dimen/_5sdp"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_8sdp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/advice_img5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/callingdoctor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_title5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/reserve_call_with_doctor"
+                    android:textColor="#1E5891"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/advice_img5" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>

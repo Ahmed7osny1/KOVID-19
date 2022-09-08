@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sriyank.a3rdmedicalsummertrainingproject">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,16 +16,58 @@
         android:theme="@style/Theme.3rdMedicalSummerTrainingProject"
         tools:targetApi="31">
         <activity
+            android:name=".UI.ReservedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.doctorMessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.patientMessagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.chattingDoctorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.ReservePCRAnalysisActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.VideoCall.VideoCallActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.Radiology.RadiologyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ForgetSuccessfulSendActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.DoctorProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ForgetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ConRegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.ProfileDoctorActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
             android:name=".service.VaccineReservationActivity"
             android:exported="false" />
         <activity
-            android:name=".ProfileActivity"
+            android:name=".UI.ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.MainActivity"
+            android:name=".OnBoarding.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

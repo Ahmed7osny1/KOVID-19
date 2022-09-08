@@ -41,6 +41,41 @@
     <string name="login">Login</string>
     <string name="new_user_signup">New Sign Up</string>
     <string name="chest_x_ray">chest x ray</string>
-    <string name="contact_with_doctor">contact with doctor</string>
     <string name="reserve_pcr_analysis">Reserve Pcr Analysis</string>
+
+
+    <string name="welcome">Welcome</string>
+    <string name="firstFragment">It always important to protect your self and your family with us you can.</string>
+    <string name="tests">Tests</string>
+    <string name="fragmentFifth">Reserve multiple tests that are related to covid-19 pandemic with an fast and easy steps</string>
+    <string name="take_vaccine">Take vaccine</string>
+    <string name="fragmentForth">Taking the vaccine saves your life and the lives of those around you</string>
+    <string name="protect_your_self_now">Protect Your Self Now ‏</string>
+    <string name="fragmentSecond">It not only about you also we care about your family friends and all who you love</string>
+    <string name="contact_with_doctor">Contact With Doctor</string>
+    <string name="FragmentThird">Always be in touch with your doctors for new updates and medical consultation</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="enter_your_email_address_associated_with_your_account">Enter Your Email Address Associated With Your Account.</string>
+    <string name="send">Send</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="patient_email">Patient Email</string>
+    <string name="ssn">SSN</string>
+    <string name="address">Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="birth_of_date">Birth Of Date</string>
+    <string name="register">Register</string>
+    <string name="forget_password">Forget Password?</string>
+    <string name="reserve_call_with_doctor">Call With Doctor</string>
+    <string name="vaccine_reservation">Vaccine Reservation</string>
+    <string name="messages">Messages</string>
+    <string name="logout">Logout</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="home">Home</string>
+    <string name="reserved">Reserved</string>
+
 </resources>

@@ -30,14 +30,14 @@
 
             <ImageView
                 android:id="@+id/nav_img"
-                android:layout_width="@dimen/_32sdp"
-                android:layout_height="@dimen/_32sdp"
-                android:layout_marginStart="15dp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:contentDescription="@string/navigation_drawer"
                 android:onClick="openNavigationDrawer"
                 android:scaleType="centerCrop"
-                android:src="@drawable/ic_menu"
-                android:contentDescription="@string/navigation_drawer" />
+                android:src="@drawable/ic_menu" />
 
             <TextView
                 android:id="@+id/kovid"
@@ -46,7 +46,7 @@
                 android:layout_marginStart="@dimen/_65sdp"
                 android:layout_marginTop="@dimen/_6sdp"
                 android:text="@string/kovid"
-                android:textSize="@dimen/_28ssp"
+                android:textSize="@dimen/_30ssp"
                 android:textStyle="bold|italic" />
 
             <TextView
@@ -56,8 +56,8 @@
                 android:layout_marginTop="@dimen/_6sdp"
                 android:layout_weight="1"
                 android:text="@string/_19"
-                android:textColor="@color/ColorApp"
-                android:textSize="@dimen/_28ssp"
+                android:textColor="#1E5891"
+                android:textSize="@dimen/_30ssp"
                 android:textStyle="bold|italic" />
 
 
@@ -80,7 +80,7 @@
                     android:layout_marginStart="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="@string/welcome_back"
-                    android:textColor="@color/ColorApp"
+                    android:textColor="#1E5891"
                     android:textSize="@dimen/_25ssp"
                     android:textStyle="bold|italic" />
 

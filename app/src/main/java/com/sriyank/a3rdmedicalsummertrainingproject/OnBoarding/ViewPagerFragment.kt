@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.sriyank.a3rdmedicalsummertrainingproject.R
-import com.sriyank.kovid19.OnBoarding.ViewPagerAdapter
 import kotlinx.android.synthetic.main.fragment_view_pager.view.*
 
 

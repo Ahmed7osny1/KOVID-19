@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import androidx.viewpager2.widget.ViewPager2
 import com.sriyank.a3rdmedicalsummertrainingproject.R
 import kotlinx.android.synthetic.main.fragment_forth.view.*
-import kotlinx.android.synthetic.main.fragment_second.view.*
 
 class ForthFragment : Fragment() {
 
@@ -19,6 +18,11 @@ class ForthFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val view =  inflater.inflate(R.layout.fragment_forth, container, false)
+        val viewPager =  activity?.findViewById<ViewPager2>(R.id.viewPager)
+
+        view.next4.setOnClickListener {
+            viewPager?.currentItem = 4
+        }
 
         return view
     }

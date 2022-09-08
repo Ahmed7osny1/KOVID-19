@@ -1,4 +1,4 @@
-package com.sriyank.kovid19.OnBoarding
+package com.sriyank.a3rdmedicalsummertrainingproject.OnBoarding
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
