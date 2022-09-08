@@ -39,7 +39,7 @@ class RegisterActivity : AppCompatActivity() {
             && (emailInput.text.toString().trim().matches(emailPattern.toRegex()) &&
                     emailInput.text.toString().trim().isNotEmpty()) &&
             (passwordInputEditText.text.toString().isNotEmpty() &&
-            passwordInputEditText.text.toString().length > 9)
+            passwordInputEditText.text.toString().length > 7)
         ) {
             return true
         } else {
@@ -57,8 +57,8 @@ class RegisterActivity : AppCompatActivity() {
 
             if(passwordInputEditText.text.toString().isEmpty())
                 Toast.makeText(this, "Enter your Password", Toast.LENGTH_LONG).show()
-            else if (passwordInputEditText.text.toString().length <= 9)
-                Toast.makeText(this, "Enter valid Password > 9", Toast.LENGTH_LONG).show()
+            else if (passwordInputEditText.text.toString().length < 8)
+                Toast.makeText(this, "Enter valid Password = 8", Toast.LENGTH_LONG).show()
 
             return false
         }

@@ -3,9 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.sriyank.a3rdmedicalsummertrainingproject">
 
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".service.VideoCall.MainApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -33,6 +36,13 @@
         <activity
             android:name=".service.VideoCall.VideoCallActivity"
             android:exported="false" />
+        <activity
+            android:name=".service.VideoCall.JoinActivity"
+            android:exported="false" />
+        <activity
+            android:name=".service.VideoCall.MeetingActivity"
+            android:exported="false" />
+
         <activity
             android:name=".service.Radiology.RadiologyActivity"
             android:exported="false" />

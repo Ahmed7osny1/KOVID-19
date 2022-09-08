@@ -78,12 +78,12 @@ class ConRegisterActivity : AppCompatActivity() {
             params.put("patient_first_name", intent.getStringExtra("FirstName"))
             params.put("patient_last_name", intent.getStringExtra("LastName"))
             params.put("patient_age", age)
-            params.put("patienet_address", intent.getStringExtra("password"))
+            params.put("patienet_address", addressInputEditText.text.toString())
             params.put("patient_email", intent.getStringExtra("email"))
             params.put("patient_SSN", assn.text.toString())
-            params.put("patient_phone", addressInputEditText.text.toString())
-            params.put("patient_date_of_birth", phoneNum.text.toString())
-            params.put("patient_password", BOD.text.toString())
+            params.put("patient_phone", phoneNum.text.toString())
+            params.put("patient_date_of_birth",BOD.text.toString())
+            params.put("patient_password", intent.getStringExtra("password"))
 
 
             Log.d("mytag", "Button clicked")

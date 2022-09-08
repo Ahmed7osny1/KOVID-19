@@ -129,6 +129,7 @@
                 app:counterEnabled="true"
                 app:endIconMode="password_toggle"
                 app:helperText="Required*"
+                app:counterMaxLength="8"
                 app:helperTextTextColor="#D00B0B"
                 app:startIconDrawable="@drawable/ic_baseline_lock_24">
 

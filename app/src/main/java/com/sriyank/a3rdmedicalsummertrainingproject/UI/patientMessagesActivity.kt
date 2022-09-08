@@ -30,7 +30,7 @@ class patientMessagesActivity : AppCompatActivity() {
         val request = MyRequestArray(
             this,
             Request.Method.GET,
-            "/messages_of_doctor",
+            "/messages_of_patient",
             null,
             { response ->
 

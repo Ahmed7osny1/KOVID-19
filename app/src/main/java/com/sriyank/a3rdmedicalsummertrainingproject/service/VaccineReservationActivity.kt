@@ -87,10 +87,10 @@ class VaccineReservationActivity : AppCompatActivity() {
 
         val params = JSONObject()
 
-        params.put("test_name", type)
-        params.put("test_date", Date)
-        params.put("test_time", time)
-        params.put("test_patient_health_name", location)
+        params.put("dose_name", type)
+        params.put("dose_date", Date)
+        params.put("dose_time", time)
+        params.put("dose_patient_health_name", location)
 
 
         Log.d("mytag", "Button clicked")
@@ -100,7 +100,7 @@ class VaccineReservationActivity : AppCompatActivity() {
         val request = MyRequest(
             this,
             Request.Method.POST,
-            "/test-reservation",
+            "/dose-reservation",
             params,
             { response ->
 
