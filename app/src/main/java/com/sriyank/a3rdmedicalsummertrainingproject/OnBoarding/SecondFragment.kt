@@ -5,7 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.viewpager2.widget.ViewPager2
 import com.sriyank.a3rdmedicalsummertrainingproject.R
+import kotlinx.android.synthetic.main.fragment_second.view.*
 
 class SecondFragment : Fragment() {
 
@@ -14,7 +16,14 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_second, container, false)
-    }
+        val view =  inflater.inflate(R.layout.fragment_second, container, false)
 
+        val viewPager =  activity?.findViewById<ViewPager2>(R.id.viewPager)
+
+        view.next.setOnClickListener {
+            viewPager?.currentItem = 2
+        }
+
+        return view
+    }
 }

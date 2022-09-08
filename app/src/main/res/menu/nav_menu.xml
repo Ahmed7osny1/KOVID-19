@@ -7,31 +7,43 @@
 
     <item
         android:id="@+id/home"
-        android:title="Home"
+        android:title="@string/home"
         android:icon="@drawable/ic_home"
         />
 
     <item
         android:id="@+id/About"
-        android:title="About"
+        android:title="@string/about"
         android:icon="@drawable/ic_info"
+        />
+
+    <item
+        android:id="@+id/reserved"
+        android:title="@string/reserved"
+        android:icon="@drawable/ic_reserved"
         />
 
 
     <item
-        android:title="profile">
+        android:title="@string/profile">
 
         <menu>
 
             <item
                 android:id="@+id/profile"
-                android:title="Profile"
+                android:title="@string/profile"
                 android:icon="@drawable/ic_profile"
                 />
 
             <item
+                android:id="@+id/message"
+                android:title="@string/messages"
+                android:icon="@drawable/ic_message"
+                />
+
+            <item
                 android:id="@+id/logout"
-                android:title="Logout"
+                android:title="@string/logout"
                 android:icon="@drawable/ic_exit"
                 />
 

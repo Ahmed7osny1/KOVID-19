@@ -1,4 +1,4 @@
-package com.sriyank.a3rdmedicalsummertrainingproject.UI
+package com.sriyank.a3rdmedicalsummertrainingproject.OnBoarding
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

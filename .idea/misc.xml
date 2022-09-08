@@ -3,14 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/drawable/ic_baseline_arrow_circle_right_24.xml" value="0.1555" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/drawable/shap_btn.xml" value="0.1555" />
-        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_home.xml" value="0.21203703703703702" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout-land/activity_login.xml" value="0.4015625" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_con_register.xml" value="0.2578125" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_doctor_messages.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_doctor_profile.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_forget_password.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_forget_successful_send.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_login.xml" value="0.22402736212056434" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_main.xml" value="0.2578125" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_patient_messages.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_profile.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_raddiology.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_regester.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_reserved.xml" value="0.22402736212056434" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_vaccine_reservation.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/advice_items.xml" value="0.264" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_blank.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_fifth.xml" value="0.27291666666666664" />
-        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_first.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_first.xml" value="0.264" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_forget_password.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_forth.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_home.xml" value="0.271875" />
@@ -27,6 +40,8 @@
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/transmission_items.xml" value="0.271875" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/wash_items.xml" value="0.271875" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/menu/nav_menu.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.149" />
       </map>
     </option>
   </component>
