@@ -83,14 +83,15 @@ class ReservePCRAnalysisActivity : AppCompatActivity() {
 
     }
 
-    private fun ReserveApi(type: String,Date: String,time: String,location: String) {
+    private fun ReserveApi(type: String,Date: String,time: String,
+                           location: String) {
 
         val params = JSONObject()
 
-        params.put("dose_name", type)
-        params.put("dose_date", Date)
-        params.put("dose_time", time)
-        params.put("dose_patient_health_name", location)
+        params.put("test_name", type)
+        params.put("test_date", Date)
+        params.put("test_time", time)
+        params.put("test_patient_health_name", location)
 
 
         Log.d("mytag", "Button clicked")
@@ -100,7 +101,7 @@ class ReservePCRAnalysisActivity : AppCompatActivity() {
         val request = MyRequest(
             this,
             Request.Method.POST,
-            "/dose-reservation",
+            "/test-reservation",
             params,
             { response ->
 
