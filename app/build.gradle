@@ -72,5 +72,7 @@ dependencies {
     implementation "androidx.core:core-ktx:1.8.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.7.10"
 
-
+    //video call
+    implementation 'live.videosdk:android-sdk:0.0.23'
+    implementation 'com.amitshekhar.android:android-networking:1.0.2'
 }
