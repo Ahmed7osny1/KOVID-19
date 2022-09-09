@@ -23,7 +23,16 @@ class Splash : Fragment() {
         Handler().postDelayed({
 
             if(checkLoggedIn()){
-                findNavController().navigate(R.id.action_splash_to_homeActivity)
+                val prefs = requireActivity().getSharedPreferences(
+                    MyConfig.SHARED_PREFS_FILENAME,
+                    AppCompatActivity.MODE_PRIVATE
+                )
+                val type = prefs.getString("type", null)
+                if(type == "patient") {
+                    findNavController().navigate(R.id.action_splash_to_homeActivity)
+                }else{
+                    findNavController().navigate(R.id.action_splash_to_profileDoctorActivity)
+                }
             }
             else if(onBoardingFinished()){
                 findNavController().navigate(R.id.action_splash_to_loginActivity)

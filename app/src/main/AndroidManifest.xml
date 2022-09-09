@@ -34,9 +34,6 @@
             android:name=".service.ReservePCRAnalysisActivity"
             android:exported="false" />
         <activity
-            android:name=".service.VideoCall.VideoCallActivity"
-            android:exported="false" />
-        <activity
             android:name=".service.VideoCall.JoinActivity"
             android:exported="false" />
         <activity
@@ -48,9 +45,6 @@
             android:exported="false" />
         <activity
             android:name=".UI.ForgetSuccessfulSendActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UI.DoctorProfileActivity"
             android:exported="false" />
         <activity
             android:name=".UI.ForgetPasswordActivity"

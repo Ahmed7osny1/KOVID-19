@@ -64,20 +64,22 @@ class LoginActivity : AppCompatActivity() {
                     )
                     val prefsEditor = prefs.edit()
                     prefsEditor.putString("token", token)
-                    prefsEditor.apply()
 
                     val type = response.getString("user")
 
                     if (type == "patient") {
+                        prefsEditor.putString("type", "patient")
                         val intent = Intent(this@LoginActivity, HomeActivity::class.java)
                         startActivity(intent)
                         finish()
                     }else{
+                        prefsEditor.putString("type", "doctor")
                         val intent = Intent(this@LoginActivity,
-                                DoctorProfileActivity::class.java)
+                                ProfileDoctorActivity::class.java)
                         startActivity(intent)
                         finish()
                     }
+                    prefsEditor.apply()
                 }
 
                 // if there is an error (wrong email or password)

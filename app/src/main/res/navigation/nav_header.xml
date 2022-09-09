@@ -24,6 +24,9 @@
             app:destination="@id/loginActivity"
             app:popUpTo="@id/splash"
             app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splash_to_profileDoctorActivity"
+            app:destination="@id/profileDoctorActivity" />
     </fragment>
     <fragment
         android:id="@+id/viewPagerFragment"
@@ -46,4 +49,9 @@
         android:name="com.sriyank.a3rdmedicalsummertrainingproject.UI.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/profileDoctorActivity"
+        android:name="com.sriyank.a3rdmedicalsummertrainingproject.UI.ProfileDoctorActivity"
+        android:label="activity_profile_doctor"
+        tools:layout="@layout/activity_profile_doctor" />
 </navigation>
