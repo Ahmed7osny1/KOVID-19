@@ -32,8 +32,6 @@ class VaccineReservationActivity : AppCompatActivity() {
 
         menuTests.setAdapter(arrayAdapterTest)
 
-        val TestSelected: String = menuTests.text.toString()
-
         // choose healthCare center
         val items2 = getDataCare()
 
@@ -41,7 +39,6 @@ class VaccineReservationActivity : AppCompatActivity() {
 
         menuCenter.setAdapter(arrayAdapterCenter)
 
-        val LocationSelected: String = menuCenter.text.toString()
 
         time.setOnClickListener {
 
@@ -60,6 +57,10 @@ class VaccineReservationActivity : AppCompatActivity() {
         Date.setOnClickListener { calenderShow() }
 
         confirm.setOnClickListener {
+
+            val TestSelected: String = menuTests.text.toString()
+
+            val LocationSelected: String = menuCenter.text.toString()
 
             if (time.text!!.isNotEmpty() && Date.text!!.isNotEmpty()) {
                 ReserveApi(
