@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_6sdp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_15sdp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/doctorImage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_95sdp"
+            android:src="@drawable/doctormale"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctorName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:text="DoctorName"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/doctorImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/doctorEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/doctorImage"
+            app:layout_constraintTop_toBottomOf="@+id/doctorName" />
+
+        <TextView
+            android:id="@+id/doctorPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/doctorImage"
+            app:layout_constraintTop_toBottomOf="@+id/doctorEmail" />
+
+        <TextView
+            android:id="@+id/doctorAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/doctorImage"
+            app:layout_constraintTop_toBottomOf="@+id/doctorPhone" />
+
+        <Button
+            android:id="@+id/bookNow"
+            android:layout_width="@dimen/_260sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/shap_btn"
+            android:text="@string/book_now"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold|italic"
+            app:backgroundTint="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/doctorImage" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

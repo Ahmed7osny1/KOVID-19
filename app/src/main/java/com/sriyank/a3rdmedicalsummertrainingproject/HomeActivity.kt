@@ -18,20 +18,30 @@ import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyRequest
 import com.sriyank.a3rdmedicalsummertrainingproject.service.Radiology.RadiologyActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.service.ReservePCRAnalysisActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.service.VaccineReservationActivity
-import com.sriyank.a3rdmedicalsummertrainingproject.service.VideoCall.JoinActivity
+import com.sriyank.a3rdmedicalsummertrainingproject.service.VideoCall.VideoCallActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.service.chattingDoctorActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.service_items.view.*
 
 class HomeActivity : AppCompatActivity() {
+
+    lateinit var msg: String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
         // Navigation Drawer
         navViewer()
+
+        //Disable Vaccine Reservation if user Reserved once
+        checkDose()
         serviceSelect.VaccineReservation.setOnClickListener {
-            startActivity(Intent(this, VaccineReservationActivity::class.java))
+            if(msg == "yes") {
+                Toast.makeText(this, "You Reserved Once", Toast.LENGTH_LONG).show()
+            }else {
+                startActivity(Intent(this, VaccineReservationActivity::class.java))
+            }
         }
 
         serviceSelect.ReservePCRAnalysis.setOnClickListener {
@@ -47,7 +57,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         serviceSelect.VideoCall.setOnClickListener {
-            startActivity(Intent(this, JoinActivity::class.java))
+            startActivity(Intent(this, VideoCallActivity::class.java))
         }
 
     }
@@ -131,5 +141,38 @@ class HomeActivity : AppCompatActivity() {
         queue.add(request)
     }
 
+    private fun checkDose(){
+
+        Log.d("mytag", "Button logout clicked")
+        // send request
+        val queue = Volley.newRequestQueue(this)
+        val request = MyRequest(
+            this,
+            Request.Method.GET,
+            "/if-dose-reserved",
+            null,
+            { response ->
+                Log.d("mytag", "response = $response")
+
+                msg = response.getString("msg")
+
+            },
+            { error ->
+                val statusCode = error.networkResponse?.statusCode
+                Log.e("mytag", "Error: $error - Status Code = $statusCode")
+                // if 401 unauthorized
+                if(statusCode == 401){
+                    val intent = Intent(this, LoginActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+                // if unknown error
+                else {
+                    Toast.makeText(this, "Connection error", Toast.LENGTH_SHORT).show()
+                }
+            }
+        )
+        queue.add(request)
+    }
 
 }
