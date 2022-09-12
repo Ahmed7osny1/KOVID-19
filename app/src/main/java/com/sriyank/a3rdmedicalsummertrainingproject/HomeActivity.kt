@@ -11,7 +11,7 @@ import com.android.volley.Request
 import com.android.volley.toolbox.Volley
 import com.sriyank.a3rdmedicalsummertrainingproject.UI.LoginActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.UI.ProfileActivity
-import com.sriyank.a3rdmedicalsummertrainingproject.UI.ReservedActivity
+import com.sriyank.a3rdmedicalsummertrainingproject.reservation.ReservedActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.UI.patientMessagesActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyConfig
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyRequest
@@ -31,15 +31,17 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+        getPatient()
+
         // Navigation Drawer
         navViewer()
 
         //Disable Vaccine Reservation if user Reserved once
         checkDose()
         serviceSelect.VaccineReservation.setOnClickListener {
-            if(msg == "yes") {
+            if (msg == "yes") {
                 Toast.makeText(this, "You Reserved Once", Toast.LENGTH_LONG).show()
-            }else {
+            } else {
                 startActivity(Intent(this, VaccineReservationActivity::class.java))
             }
         }
@@ -99,7 +101,7 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    private fun btnLogoutClicked(){
+    private fun btnLogoutClicked() {
 
         Log.d("mytag", "Button logout clicked")
         // send request
@@ -127,7 +129,7 @@ class HomeActivity : AppCompatActivity() {
                 val statusCode = error.networkResponse?.statusCode
                 Log.e("mytag", "Error: $error - Status Code = $statusCode")
                 // if 401 unauthorized
-                if(statusCode == 401){
+                if (statusCode == 401) {
                     val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     finish()
@@ -141,7 +143,7 @@ class HomeActivity : AppCompatActivity() {
         queue.add(request)
     }
 
-    private fun checkDose(){
+    private fun checkDose() {
 
         Log.d("mytag", "Button logout clicked")
         // send request
@@ -161,7 +163,7 @@ class HomeActivity : AppCompatActivity() {
                 val statusCode = error.networkResponse?.statusCode
                 Log.e("mytag", "Error: $error - Status Code = $statusCode")
                 // if 401 unauthorized
-                if(statusCode == 401){
+                if (statusCode == 401) {
                     val intent = Intent(this, LoginActivity::class.java)
                     startActivity(intent)
                     finish()
@@ -175,4 +177,49 @@ class HomeActivity : AppCompatActivity() {
         queue.add(request)
     }
 
+    private fun getPatient() {
+
+        // send request
+        val queue = Volley.newRequestQueue(this)
+        val request = MyRequest(
+            this,
+            Request.Method.GET,
+            "/profile-patient",
+            null,
+            { response ->
+
+                Log.d("mytag", "response = $response")
+                val profile = response.getJSONObject("patient")
+
+                val prefs = getSharedPreferences(
+                    MyConfig.SHARED_PREFS_FILENAME,
+                    MODE_PRIVATE
+                )
+                val prefsEditor = prefs.edit()
+                prefsEditor.putString(
+                    "PatientName", "${profile.getString("pat_fname")} " +
+                            profile.getString("pat_lname")
+                )
+                prefsEditor.putString("PatientID", profile.getString("pat_id"))
+
+                prefsEditor.apply()
+
+                // if there is an error (wrong email or password)
+                if (response.has("error")) {
+                    val errorMesssage = response.getString("error")
+                    Toast.makeText(this, errorMesssage, Toast.LENGTH_SHORT).show()
+
+                }
+            },
+            { error ->
+                Log.e(
+                    "mytag",
+                    "Error: $error - Status Code = ${error.networkResponse?.statusCode}"
+                )
+                Toast.makeText(this, "Connection error", Toast.LENGTH_SHORT).show()
+            }
+        )
+        queue.add(request)
+
+    }
 }
