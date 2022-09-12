@@ -83,5 +83,11 @@
     <string name="choose_doctor">Choose Doctor</string>
     <string name="no_messages">No Messages</string>
     <string name="book_now">Book Now</string>
+    <string name="confirm_your_live_consultation">Confirm Your Live Consultation</string>
+    <string name="name">Name:</string>
+    <string name="doctor">Doctor:</string>
+    <string name="available">Available:</string>
+    <string name="_8_00pm_9_00pm">8:00pm-9:00pm</string>
+    <string name="consultation_title">Consultation Title</string>
 
 </resources>

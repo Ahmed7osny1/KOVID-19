@@ -80,7 +80,9 @@ class VideoCallActivity : AppCompatActivity() {
                             override fun bookAction(position: Int) {
 
                                 val intent = Intent(this@VideoCallActivity,
-                                    JoinActivity::class.java)
+                                    confirmVideoCallActivity::class.java)
+                                intent.putExtra("doctorName",list[position].firstName
+                                        + " " + list[position].lastName)
                                 startActivity(intent)
 
                             }

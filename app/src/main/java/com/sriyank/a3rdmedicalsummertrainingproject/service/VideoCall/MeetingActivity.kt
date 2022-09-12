@@ -26,6 +26,7 @@ class MeetingActivity : AppCompatActivity() {
 
         val token = intent.getStringExtra("token")
         val meetingId = intent.getStringExtra("meetingId")
+        //Name of patient
         val participantName = "John Doe"
 
         // 1. Configuration VideoSDK with Token
