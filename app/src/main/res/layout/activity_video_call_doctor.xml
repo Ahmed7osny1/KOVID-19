@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".service.VideoCall.VideoCallActivity">
+    tools:context=".service.VideoCall.DoctorVideoCallActivity">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/doctorRecyclerView"
+        android:id="@+id/recDoctor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"

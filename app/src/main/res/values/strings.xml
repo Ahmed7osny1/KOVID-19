@@ -100,5 +100,6 @@
     <string name="dose_date">Dose Date:</string>
     <string name="no_dose_reserved">No Dose Reserved</string>
     <string name="no_test_reserved">No Test Reserved</string>
+    <string name="no_video_reserved">No Video Reserved</string>
 
 </resources>

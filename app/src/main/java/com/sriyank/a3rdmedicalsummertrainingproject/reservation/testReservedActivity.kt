@@ -12,11 +12,7 @@ import com.android.volley.Request
 import com.android.volley.toolbox.Volley
 import com.sriyank.a3rdmedicalsummertrainingproject.R
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.*
-import com.sriyank.a3rdmedicalsummertrainingproject.service.VideoCall.JoinActivity
-import kotlinx.android.synthetic.main.activity_login.*
 import kotlinx.android.synthetic.main.activity_test_reserved.*
-import kotlinx.android.synthetic.main.activity_video_call.*
-import kotlinx.android.synthetic.main.testitems.*
 import org.json.JSONObject
 
 class testReservedActivity : AppCompatActivity() {

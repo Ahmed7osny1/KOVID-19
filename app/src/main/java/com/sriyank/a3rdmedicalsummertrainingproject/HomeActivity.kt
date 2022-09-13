@@ -18,7 +18,7 @@ import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyRequest
 import com.sriyank.a3rdmedicalsummertrainingproject.service.Radiology.RadiologyActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.service.ReservePCRAnalysisActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.service.VaccineReservationActivity
-import com.sriyank.a3rdmedicalsummertrainingproject.service.VideoCall.VideoCallActivity
+import com.sriyank.a3rdmedicalsummertrainingproject.service.VideoCall.DoctorVideoCallActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.service.chattingDoctorActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.service_items.view.*
@@ -59,7 +59,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         serviceSelect.VideoCall.setOnClickListener {
-            startActivity(Intent(this, VideoCallActivity::class.java))
+            startActivity(Intent(this, DoctorVideoCallActivity::class.java))
         }
 
     }

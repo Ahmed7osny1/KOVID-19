@@ -31,7 +31,7 @@
             android:name=".UI.messagesReservedActivity"
             android:exported="false" />
         <activity
-            android:name=".service.VideoCall.VideoCallActivity"
+            android:name=".service.VideoCall.DoctorVideoCallActivity"
             android:exported="false" />
         <activity
             android:name=".reservation.ReservedActivity"

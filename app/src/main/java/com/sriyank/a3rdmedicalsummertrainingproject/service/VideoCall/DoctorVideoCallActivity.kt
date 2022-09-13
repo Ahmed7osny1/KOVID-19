@@ -13,12 +13,12 @@ import com.sriyank.a3rdmedicalsummertrainingproject.R
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.DoctorAdapter
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.DoctorData
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyRequestArray
-import kotlinx.android.synthetic.main.activity_video_call.*
+import kotlinx.android.synthetic.main.activity_video_call_doctor.*
 
-class VideoCallActivity : AppCompatActivity() {
+class DoctorVideoCallActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_video_call)
+        setContentView(R.layout.activity_video_call_doctor)
 
         doctorRecyclerView()
 
@@ -66,20 +66,20 @@ class VideoCallActivity : AppCompatActivity() {
                             )
                         )
 
-                        doctorRecyclerView.layoutManager = LinearLayoutManager(
+                        recDoctor.layoutManager = LinearLayoutManager(
                             this,
                             RecyclerView.VERTICAL, false
                         )
 
                         val doctorAdapter = DoctorAdapter(list)
 
-                        doctorRecyclerView.adapter = doctorAdapter
+                        recDoctor.adapter = doctorAdapter
 
                         doctorAdapter.setonItemClickListener(object: DoctorAdapter.onItemClickListener{
 
                             override fun bookAction(position: Int) {
 
-                                val intent = Intent(this@VideoCallActivity,
+                                val intent = Intent(this@DoctorVideoCallActivity,
                                     JoinActivity::class.java)
                                 intent.putExtra("doctorName",list[position].firstName
                                         + " " + list[position].lastName)
