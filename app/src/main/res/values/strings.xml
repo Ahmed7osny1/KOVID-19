@@ -89,5 +89,17 @@
     <string name="available">Available:</string>
     <string name="_8_00pm_9_00pm">8:00pm-9:00pm</string>
     <string name="consultation_title">Consultation Title</string>
+    <string name="check_your_reservation">Check Your Reservation</string>
+    <string name="test_reserved">Test Reserved</string>
+    <string name="view_test">View Test</string>
+    <string name="dose_reserved">Dose Reserved</string>
+    <string name="video_call_reserved">Video Call Reserved</string>
+    <string name="view_dose">view Dose</string>
+    <string name="view_call">view Call</string>
+    <string name="dose_name">Dose Name:</string>
+    <string name="dose_date">Dose Date:</string>
+    <string name="no_dose_reserved">No Dose Reserved</string>
+    <string name="no_test_reserved">No Test Reserved</string>
+    <string name="no_video_reserved">No Video Reserved</string>
 
 </resources>

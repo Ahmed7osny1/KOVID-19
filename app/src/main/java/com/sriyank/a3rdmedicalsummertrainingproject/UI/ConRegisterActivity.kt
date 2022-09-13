@@ -99,10 +99,16 @@ class ConRegisterActivity : AppCompatActivity() {
 
                     Log.d("mytag", "response = $response")
 
-                    // goto Login activity
-                    val intent = Intent(this, LoginActivity::class.java)
-                    startActivity(intent)
-                    finish()
+                    if(response.getString("msg") == "successful registeration") {
+                        // goto Login activity
+                        val intent = Intent(this, LoginActivity::class.java)
+                        startActivity(intent)
+                        finish()
+                    }else{
+                        Toast.makeText(this,"this email or social security number" +
+                                " is already registered",
+                        Toast.LENGTH_LONG).show()
+                    }
 
                     // if there is an error (wrong email or password)
                     if (response.has("error")) {

@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.sriyank.a3rdmedicalsummertrainingproject.R
+import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyConfig
 import live.videosdk.rtc.android.Meeting
 import live.videosdk.rtc.android.Participant
 import live.videosdk.rtc.android.VideoSDK
@@ -27,7 +28,12 @@ class MeetingActivity : AppCompatActivity() {
         val token = intent.getStringExtra("token")
         val meetingId = intent.getStringExtra("meetingId")
         //Name of patient
-        val participantName = "John Doe"
+        //Patient Name
+        val prefs = getSharedPreferences(
+            MyConfig.SHARED_PREFS_FILENAME,
+            MODE_PRIVATE
+        )
+        val participantName = prefs.getString("PatientName", null)
 
         // 1. Configuration VideoSDK with Token
         VideoSDK.config(token)

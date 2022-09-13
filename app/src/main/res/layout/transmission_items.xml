@@ -36,7 +36,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_3sdp"
-                    android:background="#1E5891"
+                    android:background="#003971"
                     />
 
                 <TextView
@@ -46,7 +46,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:textSize="@dimen/_18ssp"
-                    android:textColor="#1E5891"
+                    android:textColor="#003971"
                     android:gravity="center"
                     android:textStyle="bold|italic"
                     />
@@ -89,7 +89,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_3sdp"
-                    android:background="@color/ColorApp"
+                    android:background="#003971"
                     />
 
                 <TextView
@@ -99,7 +99,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:textSize="@dimen/_18ssp"
-                    android:textColor="@color/ColorApp"
+                    android:textColor="#003971"
                     android:gravity="center"
                     android:textStyle="bold|italic"
                     />
@@ -142,7 +142,7 @@
                 <View
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_3sdp"
-                    android:background="@color/ColorApp"
+                    android:background="#003971"
                     />
 
                 <TextView
@@ -152,7 +152,7 @@
                     android:layout_gravity="center"
                     android:layout_marginTop="@dimen/_12sdp"
                     android:textSize="@dimen/_18ssp"
-                    android:textColor="@color/ColorApp"
+                    android:textColor="#003971"
                     android:gravity="center"
                     android:textStyle="bold|italic"
                     />
