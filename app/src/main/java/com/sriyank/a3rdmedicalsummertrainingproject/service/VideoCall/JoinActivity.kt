@@ -158,7 +158,7 @@ class JoinActivity : AppCompatActivity() {
 
                     Log.d("mytag","$meetingId")
 
-                     startActivity(Intent(this,HomeActivity::class.java))
+                    startActivity(Intent(this,HomeActivity::class.java))
                     finish()
                 }else{
                     Toast.makeText(this,"Reserved Failed",Toast.LENGTH_LONG).show()
