@@ -1,5 +1,6 @@
 package com.sriyank.a3rdmedicalsummertrainingproject.reservation
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -12,9 +13,14 @@ import com.android.volley.Request
 import com.android.volley.toolbox.Volley
 import com.sriyank.a3rdmedicalsummertrainingproject.R
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.*
+import com.sriyank.a3rdmedicalsummertrainingproject.service.VideoCall.MeetingActivity
 import kotlinx.android.synthetic.main.activity_video_call_reserved.*
 
 class videoCallReservationActivity : AppCompatActivity() {
+
+    var sampleToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiIzZGIxNWJjZC1lMGY3LTQ5MjUtODIzMC02Zjg4YTQzMTIyNTciLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTY2MjU0MDc2OSwiZXhwIjoxNjYzMTQ1NTY5fQ.zvbaNdzJnCigHGtMQx7_gUXPDDdJrJW4KFJA4p0tG94"
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_video_call_reserved)
@@ -83,6 +89,12 @@ class videoCallReservationActivity : AppCompatActivity() {
 
                                 Log.d("mytag",response.getJSONObject(position).getString("con_meet_id"))
 
+                                val intent = Intent(this@videoCallReservationActivity, MeetingActivity::class.java)
+                                intent.putExtra("token", sampleToken)
+                                intent.putExtra("meetingId",
+                                    response.getJSONObject(position).getString("con_meet_id"))
+                                startActivity(intent)
+
                             }
                         })
                     }
@@ -150,6 +162,12 @@ class videoCallReservationActivity : AppCompatActivity() {
                             override fun openAction(position: Int) {
 
                                 Log.d("mytag",response.getJSONObject(position).getString("con_meet_id"))
+
+                                val intent = Intent(this@videoCallReservationActivity, MeetingActivity::class.java)
+                                intent.putExtra("token", sampleToken)
+                                intent.putExtra("meetingId",
+                                    response.getJSONObject(position).getString("con_meet_id"))
+                                startActivity(intent)
 
                             }
                         })

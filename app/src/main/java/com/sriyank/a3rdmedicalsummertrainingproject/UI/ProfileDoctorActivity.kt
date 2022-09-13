@@ -13,6 +13,7 @@ import com.android.volley.toolbox.Volley
 import com.sriyank.a3rdmedicalsummertrainingproject.R
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyConfig
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyRequest
+import com.sriyank.a3rdmedicalsummertrainingproject.reservation.videoCallReservationActivity
 import kotlinx.android.synthetic.main.activity_profile_doctor.*
 
 class ProfileDoctorActivity : AppCompatActivity() {
@@ -39,6 +40,10 @@ class ProfileDoctorActivity : AppCompatActivity() {
         logoutDoctor.setOnClickListener{
             btnLogoutClicked()
             Toast.makeText(this,"logout",Toast.LENGTH_SHORT).show()
+        }
+
+        VideoCallDoctor.setOnClickListener {
+            startActivity(Intent(this,videoCallReservationActivity::class.java))
         }
 
 
