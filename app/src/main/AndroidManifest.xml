@@ -19,7 +19,16 @@
         android:theme="@style/Theme.3rdMedicalSummerTrainingProject"
         tools:targetApi="31">
         <activity
-            android:name=".reservation.messagesReservedActivity"
+            android:name=".reservation.videoCallReservationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservation.testReservedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".reservation.doseReservedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UI.messagesReservedActivity"
             android:exported="false" />
         <activity
             android:name=".service.VideoCall.VideoCallActivity"

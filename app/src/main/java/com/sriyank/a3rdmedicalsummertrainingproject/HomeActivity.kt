@@ -145,7 +145,6 @@ class HomeActivity : AppCompatActivity() {
 
     private fun checkDose() {
 
-        Log.d("mytag", "Button logout clicked")
         // send request
         val queue = Volley.newRequestQueue(this)
         val request = MyRequest(

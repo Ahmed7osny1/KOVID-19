@@ -107,7 +107,7 @@ class VaccineReservationActivity : AppCompatActivity() {
 
                 Log.d("mytag", "response = $response")
                 Toast.makeText(this@VaccineReservationActivity,
-                    "$response",Toast.LENGTH_LONG).show()
+                    "Reserved successfully",Toast.LENGTH_LONG).show()
                 // goto Home activity
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)

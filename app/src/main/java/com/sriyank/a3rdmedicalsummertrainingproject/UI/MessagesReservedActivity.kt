@@ -1,4 +1,4 @@
-package com.sriyank.a3rdmedicalsummertrainingproject.reservation
+package com.sriyank.a3rdmedicalsummertrainingproject.UI
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
