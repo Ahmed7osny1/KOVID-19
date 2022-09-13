@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/wash_your_hands_frequently"
                     android:textSize="@dimen/_16ssp"
-                    android:textColor="#1E5891"
+                    android:textColor="#003971"
                     android:textStyle="bold|italic"
                     android:layout_marginStart="@dimen/_4sdp"
                     android:layout_marginTop="@dimen/_25sdp"
@@ -91,7 +91,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/maintain_social_distancing"
                     android:textSize="@dimen/_16ssp"
-                    android:textColor="#1E5891"
+                    android:textColor="#003971"
                     android:textStyle="bold|italic"
                     android:layout_marginStart="@dimen/_4sdp"
                     android:layout_marginTop="@dimen/_25sdp"
@@ -102,14 +102,14 @@
                     android:id="@+id/txt_description2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginBottom="4dp"
                     android:gravity="center"
                     android:text="@string/Advice2"
                     android:textSize="@dimen/_13ssp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    />
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -142,7 +142,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/avoid_touching_face"
                     android:textSize="@dimen/_16ssp"
-                    android:textColor="#1E5891"
+                    android:textColor="#003971"
                     android:textStyle="bold|italic"
                     android:layout_marginStart="@dimen/_4sdp"
                     android:layout_marginTop="@dimen/_25sdp"
@@ -193,7 +193,7 @@
                     android:layout_marginStart="@dimen/_2sdp"
                     android:layout_marginTop="44dp"
                     android:text="@string/practice_respiratory_hygiene"
-                    android:textColor="#1E5891"
+                    android:textColor="#003971"
                     android:textSize="@dimen/_16ssp"
                     android:textStyle="bold|italic"
                     app:layout_constraintStart_toStartOf="parent"

@@ -56,7 +56,7 @@
                 android:layout_marginTop="@dimen/_6sdp"
                 android:layout_weight="1"
                 android:text="@string/_19"
-                android:textColor="#1E5891"
+                android:textColor="#003971"
                 android:textSize="@dimen/_30ssp"
                 android:textStyle="bold|italic" />
 
@@ -80,7 +80,7 @@
                     android:layout_marginStart="@dimen/_20sdp"
                     android:layout_marginTop="@dimen/_10sdp"
                     android:text="@string/welcome_back"
-                    android:textColor="#1E5891"
+                    android:textColor="#003971"
                     android:textSize="@dimen/_25ssp"
                     android:textStyle="bold|italic" />
 
