@@ -29,6 +29,8 @@ class ProfileDoctorActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_doctor)
 
+        var id = ""
+
         logoutDoctor.visibility = View.INVISIBLE
         messageDoctor.visibility = View.INVISIBLE
         VideoCallDoctor.visibility = View.INVISIBLE
@@ -43,7 +45,15 @@ class ProfileDoctorActivity : AppCompatActivity() {
         }
 
         VideoCallDoctor.setOnClickListener {
-            startActivity(Intent(this,videoCallReservationActivity::class.java))
+            startActivity(Intent(this,
+                videoCallReservationActivity::class.java))
+        }
+
+        messageDoctor.setOnClickListener {
+            var intent = Intent(this,
+                MessageReplayActivity::class.java)
+            intent.putExtra("doc_id",id)
+            startActivity(intent)
         }
 
 
@@ -67,6 +77,8 @@ class ProfileDoctorActivity : AppCompatActivity() {
                 yourPhone.text = profile.getLong("doc_phone").toString()
                 DateBirth.text = profile.getString("doc_age")
                 yourEmail.text = profile.getString("doc_email")
+
+                id = profile.getString("doc_id")
 
                 // if there is an error (wrong email or password)
                 if (response.has("error")) {
