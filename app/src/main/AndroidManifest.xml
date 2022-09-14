@@ -19,6 +19,9 @@
         android:theme="@style/Theme.3rdMedicalSummerTrainingProject"
         tools:targetApi="31">
         <activity
+            android:name=".UI.messageResevedActivity"
+            android:exported="false" />
+        <activity
             android:name=".reservation.videoCallReservationActivity"
             android:exported="false" />
         <activity
@@ -28,19 +31,10 @@
             android:name=".reservation.doseReservedActivity"
             android:exported="false" />
         <activity
-            android:name=".UI.messagesReservedActivity"
-            android:exported="false" />
-        <activity
             android:name=".service.VideoCall.DoctorVideoCallActivity"
             android:exported="false" />
         <activity
             android:name=".reservation.ReservedActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UI.doctorMessagesActivity"
-            android:exported="false" />
-        <activity
-            android:name=".UI.patientMessagesActivity"
             android:exported="false" />
         <activity
             android:name=".service.chattingDoctorActivity"

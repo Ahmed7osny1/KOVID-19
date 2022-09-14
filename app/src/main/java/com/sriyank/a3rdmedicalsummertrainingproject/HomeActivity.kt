@@ -11,8 +11,8 @@ import com.android.volley.Request
 import com.android.volley.toolbox.Volley
 import com.sriyank.a3rdmedicalsummertrainingproject.UI.LoginActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.UI.ProfileActivity
+import com.sriyank.a3rdmedicalsummertrainingproject.UI.messageResevedActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.reservation.ReservedActivity
-import com.sriyank.a3rdmedicalsummertrainingproject.UI.patientMessagesActivity
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyConfig
 import com.sriyank.a3rdmedicalsummertrainingproject.Utils.MyRequest
 import com.sriyank.a3rdmedicalsummertrainingproject.service.Radiology.RadiologyActivity
@@ -79,7 +79,7 @@ class HomeActivity : AppCompatActivity() {
                     btnLogoutClicked()
                     Toast.makeText(this, "Logged out", Toast.LENGTH_LONG).show()
                 }
-                R.id.message -> startActivity(Intent(this, patientMessagesActivity::class.java))
+                R.id.message -> startActivity(Intent(this, messageResevedActivity::class.java))
                 R.id.reserved -> startActivity(Intent(this, ReservedActivity::class.java))
                 R.id.profile -> startActivity(Intent(this, ProfileActivity::class.java))
             }

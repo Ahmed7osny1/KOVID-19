@@ -92,12 +92,12 @@ class testReservedActivity : AppCompatActivity() {
     private fun deleteTest(testId: String){
 
         val params = JSONObject()
-        params.put("res_id", testId)
+        params.put("res_id",testId)
 
         val queue = Volley.newRequestQueue(this)
         val request = MyRequest(
             this,
-            Request.Method.DELETE,
+            Request.Method.POST,
             "/delete-test-reservation",
             params,
             { response ->
