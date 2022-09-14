@@ -23,8 +23,85 @@ class messageResevedActivity : AppCompatActivity() {
         setContentView(R.layout.activity_messages_reserved)
 
             patientMessageRecyclerView()
-
     }
+
+    /*private fun doctorMessageRecyclerView() {
+
+        var list = ArrayList<MessageDate>()
+
+        // send request
+        val queue = Volley.newRequestQueue(this)
+
+        val request = MyRequestArray(
+            this,
+            Request.Method.GET,
+            "/messages_of_doctor",
+            null,
+            { response ->
+
+                Log.d("mytag", "$response")
+
+                if(response.length() > 0) {
+
+                    noDataTextView.visibility = View.GONE
+
+                    for (i in 0 until response.length()) {
+
+                        val data = response.getJSONObject(i)
+
+                        var messagereplay: String = "Not Replayed"
+                        var Image = R.drawable.ic_notreplayed
+
+                        if (response.getJSONObject(i).getString("reply") != "") {
+                            messagereplay = response.getJSONObject(i).getString("reply")
+                            Image = R.drawable.ic_replayed
+                            replayNow.visibility = View.GONE
+                            replayMessage.visibility = View.GONE
+                        } else {
+                            replay.visibility = View.GONE
+                        }
+
+                        list.add(
+                            MessageDate(
+                                Image,
+                                data.getString("pat_fname"),
+                                data.getString("pat_lname"),
+                                data.getString("message"),
+                                messagereplay,
+                            )
+                        )
+
+                        messagesRecyclerView.layoutManager = LinearLayoutManager(
+                            this,
+                            RecyclerView.VERTICAL, false
+                        )
+
+                        val messageAdapter = MessageAdapter(list)
+
+                        messagesRecyclerView.adapter = messageAdapter
+
+                        messageAdapter.setonItemClickListener(object :
+                            MessageAdapter.onItemClickListener {
+
+                            override fun replayAction(position: Int) {
+                                Log.d("mytag","$position")
+                            }
+                        })
+
+                    }
+                }
+                Log.d("mytag", "$list")
+
+            },
+            { error ->
+                Log.e("mytag", "Error: $error - Status Code = ${error.networkResponse?.statusCode}")
+                Toast.makeText(this, "Connection error", Toast.LENGTH_SHORT).show()
+            }
+        )
+
+        queue.add(request)
+
+    }*/
 
     private fun patientMessageRecyclerView() {
 
@@ -50,14 +127,21 @@ class messageResevedActivity : AppCompatActivity() {
                     for (i in 0 until response.length()) {
 
                         val data = response.getJSONObject(i)
+                        var messagereplay: String = "Not Replayed"
+                        var Image = R.drawable.ic_notreplayed
+
+                        if(response.getJSONObject(i).getString("reply") != ""){
+                            messagereplay = response.getJSONObject(i).getString("reply")
+                            Image = R.drawable.ic_replayed
+                        }
 
                         list.add(
                             MessageDate(
-                                R.drawable.ic_replayed,
+                                Image,
                                 data.getString("doctor_first_name"),
                                 data.getString("doctor_last_name"),
                                 data.getString("message"),
-                                data.getString("reply")
+                                messagereplay,
                             )
                         )
 
