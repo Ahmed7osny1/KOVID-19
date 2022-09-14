@@ -46,7 +46,13 @@ class ConRegisterActivity : AppCompatActivity() {
             DatePickerDialog.OnDateSetListener
             { view, year, monthOfYear, dayOfMonth ->
 
-                BOD.setText("" + dayOfMonth + " - " + (monthOfYear+1) + " - " + year)
+                if(monthOfYear + 1 >= 10) {
+
+                    BOD.setText("" + (monthOfYear + 1) + "/" + dayOfMonth + "/" + year)
+
+                }else{
+                    BOD.setText("0" + (monthOfYear + 1) + "/" + dayOfMonth + "/" + year)
+                }
 
                 age = today.get(Calendar.YEAR) - year
 
@@ -77,7 +83,6 @@ class ConRegisterActivity : AppCompatActivity() {
 
             params.put("patient_first_name", intent.getStringExtra("FirstName"))
             params.put("patient_last_name", intent.getStringExtra("LastName"))
-            params.put("patient_age", age)
             params.put("patienet_address", addressInputEditText.text.toString())
             params.put("patient_email", intent.getStringExtra("email"))
             params.put("patient_SSN", assn.text.toString())
@@ -86,7 +91,7 @@ class ConRegisterActivity : AppCompatActivity() {
             params.put("patient_password", intent.getStringExtra("password"))
 
 
-            Log.d("mytag", "Button clicked")
+            Log.d("mytag", "${BOD.text.toString()}")
 
             // send request
             val queue = Volley.newRequestQueue(this)

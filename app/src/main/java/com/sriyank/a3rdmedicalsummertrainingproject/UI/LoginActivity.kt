@@ -64,6 +64,7 @@ class LoginActivity : AppCompatActivity() {
                     )
                     val prefsEditor = prefs.edit()
                     prefsEditor.putString("token", token)
+                    Log.d("mytag","$token")
 
                     val type = response.getString("user")
 
