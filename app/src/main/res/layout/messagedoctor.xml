@@ -89,21 +89,6 @@
             app:layout_constraintTop_toBottomOf="@+id/message" />
 
 
-        <TextView
-            android:id="@+id/replay"
-            android:layout_width="@dimen/_205sdp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_13sdp"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:text="Reply:"
-            android:textSize="@dimen/_15ssp"
-            android:textStyle="italic|bold"
-            app:layout_constraintStart_toEndOf="@+id/replayheader"
-            app:layout_constraintTop_toBottomOf="@+id/message"
-            />
-
 
         <TextView
             android:id="@+id/replay"
