@@ -26,6 +26,7 @@
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_login.xml" value="0.22402736212056434" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_main.xml" value="0.2578125" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_meeting.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_message_replay.xml" value="0.2116289012398461" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_message_reseved.xml" value="0.22402736212056434" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_messages_reserved.xml" value="0.22402736212056434" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/activity_patient_messages.xml" value="0.22402736212056434" />
@@ -59,6 +60,7 @@
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/fragment_view_pager.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/item_remote_peer.xml" value="0.22402736212056434" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/messagedoctor.xml" value="0.22402736212056434" />
+        <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/messagepatient.xml" value="0.264" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/nav_header.xml" value="0.27291666666666664" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/service_items.xml" value="0.2647352647352647" />
         <entry key="..\:/Android/3rdMedicalSummerTrainingProject/app/src/main/res/layout/symptoms_items.xml" value="0.2647352647352647" />

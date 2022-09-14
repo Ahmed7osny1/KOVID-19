@@ -19,6 +19,9 @@
         android:theme="@style/Theme.3rdMedicalSummerTrainingProject"
         tools:targetApi="31">
         <activity
+            android:name=".UI.MessageReplayActivity"
+            android:exported="false" />
+        <activity
             android:name=".UI.messageResevedActivity"
             android:exported="false" />
         <activity

@@ -60,7 +60,7 @@ class JoinActivity : AppCompatActivity() {
         patientNameConfirm.text = patientName.toString()
 
 
-        btnCreate.setOnClickListener { v: View? ->
+        btnCreate.setOnClickListener {
             // we will explore this method in the next step
             createMeeting(sampleToken)
         }

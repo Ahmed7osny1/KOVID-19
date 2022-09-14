@@ -23,22 +23,36 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/messageName"
+            android:id="@+id/messageName1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginStart="@dimen/_15sdp"
-            android:text="messageName"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Patient Name:"
+            android:layout_marginTop="@dimen/_15sdp"
             android:textSize="@dimen/_16ssp"
             android:textStyle="italic|bold"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/message"
+            android:id="@+id/messageName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="messageName"
+            android:textSize="@dimen/_16ssp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/messageName1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/messageheader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Message"
-            android:layout_marginStart="@dimen/_15sdp"
+            android:text="Message:"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_8sdp"
             android:textSize="@dimen/_15ssp"
@@ -46,34 +60,65 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/messageName" />
 
+
         <TextView
-            android:id="@+id/replay"
+            android:id="@+id/message"
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_13sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:text="Message"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toEndOf="@+id/messageheader"
+            app:layout_constraintTop_toBottomOf="@+id/messageName" />
+
+        <TextView
+            android:id="@+id/replayheader"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_10sdp"
+            android:padding="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Reply:"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="italic|bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/message" />
+
+
+        <TextView
+            android:id="@+id/replay"
+            android:layout_width="@dimen/_205sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_13sdp"
             android:layout_marginEnd="@dimen/_10sdp"
             android:text="Not Replayed"
             android:textSize="@dimen/_15ssp"
             android:textStyle="italic|bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/message" />
+            app:layout_constraintStart_toEndOf="@+id/replayheader"
+            app:layout_constraintTop_toBottomOf="@+id/message"
+            />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/replayMessage"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="@dimen/_270sdp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:text="Message Replay"
             android:textSize="@dimen/_15ssp"
             android:textStyle="bold|italic"
-            app:counterEnabled="true"
-            android:layout_marginTop="@dimen/_10sdp"
             app:endIconMode="clear_text"
-            app:helperText="Required*"
             app:helperTextTextColor="#D00B0B"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/message">
+            app:layout_constraintTop_toBottomOf="@+id/replayheader">
 
             <EditText
                 android:id="@+id/replayMessageText"
@@ -88,7 +133,7 @@
             android:layout_height="@dimen/_37sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/shap_btn"
-            android:text="Replay Now"
+            android:text="Reply Now"
             android:textSize="@dimen/_14sdp"
             android:textStyle="bold|italic"
             app:backgroundTint="@null"
