@@ -111,7 +111,7 @@ class ReservePCRAnalysisActivity : AppCompatActivity() {
 
                 Log.d("mytag", "response = $response")
                 Toast.makeText(this@ReservePCRAnalysisActivity,
-                    "$response", Toast.LENGTH_LONG).show()
+                    "Reserved successfully",Toast.LENGTH_LONG).show()
                 // goto Home activity
                 val intent = Intent(this, HomeActivity::class.java)
                 startActivity(intent)
