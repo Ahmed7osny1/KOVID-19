@@ -1,5 +1,6 @@
 package com.sriyank.a3rdmedicalsummertrainingproject.UI
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -110,10 +111,20 @@ class MessageReplayActivity : AppCompatActivity() {
             this,
             Request.Method.POST,
             "/reply_to_message",
-            null,
+            params,
             { response ->
 
                 Log.d("mytag", "$response")
+
+                if(response.getString("msg") == "successfully"){
+                    Toast.makeText(this,"Replayed successfully",
+                    Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this,MessageReplayActivity::class.java))
+                    finish()
+                }else{
+                    Toast.makeText(this,"Replayed failed",
+                        Toast.LENGTH_LONG).show()
+                }
 
             },
             { error ->

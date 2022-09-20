@@ -31,7 +31,7 @@ import java.util.*
 class JoinActivity : AppCompatActivity() {
 
     var age :Int = 0
-    var sampleToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiIzZGIxNWJjZC1lMGY3LTQ5MjUtODIzMC02Zjg4YTQzMTIyNTciLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTY2MjU0MDc2OSwiZXhwIjoxNjYzMTQ1NTY5fQ.zvbaNdzJnCigHGtMQx7_gUXPDDdJrJW4KFJA4p0tG94"
+    var sampleToken="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiJmZjllY2I0Ny1mZDBjLTRhNTctYWIzZS0wMDE1NWRjMGZmYTQiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTY2MzIyMDY2MywiZXhwIjoxNjYzODI1NDYzfQ.43fFlKVwvyUqrv2KUL8RxDi1LwvJ7t36AerVn26Jfbo"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
